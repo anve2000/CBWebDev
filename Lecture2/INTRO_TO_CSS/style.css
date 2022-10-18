@@ -1,0 +1,15 @@
+h1{
+    color:blueviolet;
+    background-color: bisque;
+    border: 4px solid black;
+}
+
+p{
+    width: 800px;
+    border: 1px solid goldenrod;
+}
+
+h2{
+    text-transform:uppercase;
+    font-size: 40px;
+}
