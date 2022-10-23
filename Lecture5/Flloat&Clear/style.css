@@ -1,0 +1,9 @@
+img{
+    width: 600px;
+    float:left;
+    /* float: right; */
+}
+
+#para2{
+    clear: left;
+}

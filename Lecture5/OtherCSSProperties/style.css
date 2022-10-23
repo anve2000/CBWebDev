@@ -1,0 +1,39 @@
+p{
+    white-space: nowrap;
+    overflow: hidden;
+    /* OVERFLOW Property has got 2 types overflow-x and overflow-y which when u dont specify automatically manages the direction which is overflowing */
+    text-overflow: ellipsis;
+}
+
+p:hover{
+    overflow: scroll;
+    text-overflow: clip;
+}
+
+#chat-box{
+    border: 1px solid #cccccc;
+    padding: 16px;
+    margin: 30px auto;
+    width:50vw;
+    font-size: 24px;
+    height: 300px;
+    overflow-y: hidden;
+    /* OVERFLOW should be applied on this block, if content flows out of it*/
+}
+
+
+#chat{
+    overflow-y:hidden;
+}
+
+
+div{
+    border: 2px solid black;
+    background-color: palevioletred;
+    /* width: 700px; */
+    height: 150px;
+    max-width: 700px;
+    /* As u keep increasing the width of the view port,the width of the div keeps increasing the point its hits the max width and after which it won't inc further */
+    min-width: 500px;
+    /* As u keep decreasing the view port width, the size of the width too keeps decreasing but till the point it hits the min width after which u can only scroll in the min-size and not decrease it */
+}

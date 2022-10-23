@@ -1,0 +1,22 @@
+section{
+    border: 1px solid black;
+    width: 50vw;
+    margin: 40px auto;
+    font-size: 30px;
+}
+
+section ul{
+    /* list-style-type: circle; */
+    list-style-type: '\1F34D';
+    /* list-style-image: url('https://cdn-icons-png.flaticon.com/512/4054/4054981.png'); 
+        For image icon prefer a small image because its not possible to control its size once taken
+    */
+    list-style: none;
+    font-size: 40px;
+    /* While image icon size gets automatically using font-szie */
+    padding: 30px;
+}
+
+section ul li{
+    border: 1px solid #ccc;
+}
