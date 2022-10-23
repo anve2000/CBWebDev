@@ -1,0 +1,96 @@
+div{
+    height : 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 3px solid black;
+}
+
+/* When u drag cursor on a div,a psuedoclass gets added to it which is called "hover class"  */
+div:hover{
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+/* When u click on an element it gets into an "Active" state or it gets a psuedoclass "active" */
+h1:active{
+    background-color: plum;
+    border: 3px solid black;
+}
+
+/* When on the any input element u click and start typing it gets into a "focus state", a psuedoclass focus gets added to it */
+input:focus{
+    background-color: antiquewhite ;
+}
+
+a{
+    color: red;
+}
+
+/* a:visited{
+    color: green;
+} */
+
+/* a:active{
+    color: green;
+} */
+
+/* When an anchor tag is clicked, it turned into "visited state" and psuedoclass "visited" is added to it */
+ul a:visited{
+    color: seagreen;
+}
+
+/* First child of the ordered list so created */
+ol li:first-child{
+    color: red;
+}
+
+/* last child of ordered-list */
+ol li:last-child{
+    color:blue;
+}
+
+/* nth child of an ordered list */
+ol li:nth-of-type(4){
+    color: brown;
+}
+
+/* all the even children of ordered list */
+ol li:nth-of-type(even)
+{
+    font-weight: bold;
+}
+
+/* ol li:nth-of-type(odd)
+{
+
+} */
+
+/* all the children of ol that are of the type An+B: A is the interval; B is the offset ,n start from 0*/
+ol li:nth-of-type(2n+3){
+    /* 3 is the starting point for this pattern */
+    color: darksalmon;
+}
+
+ol li:nth-of-type(even):active{ 
+    background-color: cadetblue;
+}
+
+/* Immedietley "after" the element that is selected */
+h1::after{
+    /* this content is added immidietely after h1 */
+    content: "This is from CSS";
+    /* This styling is applied to this content */
+    border: 1px dashed black;
+    background-color: burlywood;
+}
+
+h1::before{
+    /* This content is added immidietely before h1 */
+    content: "\2665";
+}
+
+ul li::before{
+    content:"\260E";
+}
+
+

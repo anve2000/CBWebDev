@@ -1,0 +1,15 @@
+/* string that STARTS WITH ^= */
+
+a[href^="http"]{
+    color:red;
+}
+
+/* string that ENDS WITH */
+a[href$="in"]{
+    color:green;
+}
+
+/* string in which the given string is Present Anywhere */
+a[href*="coding"]{
+   color:palevioletred;
+}

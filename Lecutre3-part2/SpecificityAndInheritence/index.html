@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+        }
+
+        #special::before {
+            content: "\2731";
+        }
+
+        section {
+            color: fuchsia;
+        }
+
+        li::first-letter{
+            font-size: 40px;;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Specificity & Inheritence</h1>
+    <p id="special">Things/Selectors which are more specific are given more importance/priority</p>
+
+    <section>
+        <p>&nbsp&nbsp Inline styling &nbsp <strong>></strong> &nbsp ID Selector &nbsp <strong>></strong> &nbsp Class
+            Selector &nbsp <strong>></strong> &nbsp Element Selector</p>
+    </section>
+
+    <ul>
+        <li><span>Website to Calculate</span>
+            <a href="https://specificity.keegan.st/">Specificity</a>
+        </li>
+        <li><span>Nice blog to read <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Inheritence</a></span>
+        </li>
+    </ul>
+    
+
+
+</body>
+
+</html>
