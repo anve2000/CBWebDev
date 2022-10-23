@@ -1,0 +1,44 @@
+div{
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+#static #middle{
+    position: static;
+    /* once the postion is set to STATIC, the element takes up offset values according to the normal flow of the page, i.e, default values . So now NONE of the four values create any effect on the element*/
+    top: 100px;
+    left: 150px;
+    right: 100px;
+    bottom: 100px ;
+}
+
+#relative #middle{
+    position: relative;
+    /* position is change to new position that is at given offset value distances in respective directions, relative to initial postion of that element */
+    top: 20px;
+    left: 50px;
+}
+
+#absolute{
+    border: 2px solid blue;
+    position:relative;
+}
+
+#absolute #middle{
+    position: absolute;
+    top:50px;
+    /* left: 0px; */
+
+}
+
+#fixed #middle{
+    position: fixed;
+    top: 10px;
+}
+
+/* #absolute2 #middle{
+    position: absolute;
+    top: 60px;
+} */

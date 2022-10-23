@@ -1,0 +1,62 @@
+section:nth-of-type(1) h1{
+    background-color: pink;
+    border: 2px solid black;
+    display: inline;
+    height: 500px;
+    width:400px;
+    /* Height and Width aren't respected in INLINE DISPLAY, they will take up there own height and width that wouldn't change */
+    margin: 20px;
+    padding: 10px;
+    /* Margin and Padding properties are respected in INLINE DISPLAY */
+}
+
+/* section:nth-of-type(1){ */
+    /* border: 2px solid blue; */
+/* } */
+
+section:nth-of-type(2){
+    border: 2px solid red;
+    margin-top: 50px;
+}
+
+
+section:nth-of-type(1) span{
+    border: 2px solid black;
+    background-color: aquamarine;
+    display: block;
+    height: 100px;
+    width: 500px;
+    margin: 30px;
+    padding: 20px;
+    /* margin: 50px; */
+}
+
+/* h1{
+    border: 2px solid black;
+    background-color: lawngreen;
+    height: 100px;
+    width: 500px;
+    margin: 50px;
+}
+
+section:nth-of-type(2) span{
+    border: 2px solid black;
+    background-color: lightsalmon;
+    font-size: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+} */
+
+div{
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    margin: 10px;
+    /* display: inline; */
+    display: inline-block;
+}
+
+/* div:nth-of-type(2){ */
+    /* display: none; <-- used to temporarily hide or remove element and prevent it from tsking space   */
+/* } */

@@ -1,0 +1,53 @@
+article{
+    font-size: 100px;
+}
+
+ul{
+    font-size: 50%;
+}
+
+section:nth-of-type(1){
+    /* height: 50%; <--would take up dimensions 0 as there's ni parent element to section */
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+section div:nth-of-type(1) div{
+    /* PERCENT UNITS: x% == x%  of the size of its immediete parent  */
+    width:100%;
+    height: 100%;
+    border: 2px solid red;
+    background-color: aqua;
+    /* Border box BOX-SIZING helps in perfect fit of box in the border of its parent */
+    box-sizing: border-box;
+}
+
+
+section:nth-of-type(2){
+    font-size: 20px;
+    /* border: 2px solid blue; */
+}
+
+section:nth-of-type(2) ul{
+    /* x em ==> font-size is increased x-times the font-size of it's immediete parent */
+    /* font-size: 2em; */
+    font-size: 2rem;
+    /* border: 2px solid blue; */
+}
+
+section:nth-of-type(3){
+   
+    height: 40vh;
+    /* 40 % of view port height */
+    /* height: 100px;
+    width: 100px; */
+    width: 70vw;
+    /* 70% of view port width
+    
+    */
+    background-color: crimson;
+    border:2px solid black;
+} 
+
+
