@@ -1,0 +1,70 @@
+section{
+    border:1px solid #ccc;
+    width: 60vw;
+    margin: 50px auto;
+    padding: 16px;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center ;
+}
+
+@media screen and (max-width:790px){
+    h1{
+        /* background-color: blue; */
+        color:red;
+        font-size: 3rem;
+    }
+}
+
+/* @media screen and (orientation:landscape){
+    h1{
+        color: blue;
+        text-shadow: 1px 1px 2px rgb(104,104,104);
+        text-transform: uppercase;
+    }
+} */
+
+/* ',' in media-queries means logical OR*/
+/* Simultaneous media queries applied one after the other, the last one is applied(valid) */
+@media screen and (orientation:portrait),(max-width:780px){
+    h1{
+        color: blue;
+        text-shadow: 1px 1px 2px rgb(104,104,104);
+        text-transform: uppercase;
+    }
+}
+
+/* 
+@media screen and (max-width:595px){
+    h1{
+        color:green;
+        border: 1px solid black;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:360px)
+{
+    h1{
+        color: purple;
+        border:1px solid black;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:270px) {
+    h1{
+        color: brown;
+        border: 1px solid black;
+        font-size: 0.9rem;    
+    }
+}
+
+@media screen and (max-width:170px) {
+    h1{
+        color: navy;
+        border: 1px solid black;
+        font-size: 0.4rem;
+    }
+} */

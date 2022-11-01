@@ -1,0 +1,108 @@
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* Even after applying Justify Content property,no results will show up because it works onnly when there's extra space in flex box, which here it is 0 */
+    width: 500px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: lightseagreen ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 0px 2px rgb(104,104,104);
+    z-index: 10;
+}
+
+li{
+    padding: 14px 0px;
+}
+
+
+@media screen and (max-width:580px){
+    nav,ul{
+        flex-direction: column;
+    }
+
+    ul{
+        align-items: center;
+    }
+
+
+}
+
+/* Navbar CSS End here */
+section{
+    width:75vw;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    border-radius :8px; 
+} 
+ 
+figcaption{
+    border: white solid 2px;
+}
+
+figure{
+    width:300px;
+    /* width: 30%; */
+    text-align: center;
+    margin: 15px;
+    border: 1px solid #ccc;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.34,1.56,0.64,1);
+    box-shadow: 0px 0px 4px rgb(104,104,104);
+}
+
+
+figure img{
+    /* height: 50%; */
+    height:230px;
+    width: 95%;
+    padding: 8px;
+}
+
+
+h1{
+    font-weight: lighter;
+}
+
+button{
+    font-size: 20px;
+    padding: 4px 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 300ms;
+}
+
+button:hover{
+    background-color: #a8dadc;
+    color: white;
+}
+
+figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}

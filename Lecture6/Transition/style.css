@@ -1,0 +1,18 @@
+div{
+    border: 2px solid black;
+    background-color: palevioletred;
+    height: 200px;
+    width: 200px;
+    transition: 2s;
+    /* Apply transtion to normal state, when u want transition to go to the new state followinf these properties, and , u want to go back to old state also using these properties, else apply transition to psuedoclass ,like hover */
+    transition-property: border-radius;
+    transition-property: border-radius,background-color;
+    transition-duration: 2s;
+    transition-delay:1s ;
+}
+
+div:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+}
